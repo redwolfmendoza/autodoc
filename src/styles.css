@@ -1,0 +1,87 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "bootstrap.min.css";
+
+body {margin:0;padding:0;font-family: Arial, Helvetica, sans-serif;}
+* {font-family: Arial, Helvetica, sans-serif;}
+
+.tire-bg {
+    background-color:#fff;
+    background-image:url('assets/images/tire-bg.jpg');
+    background-position:center bottom;
+    background-repeat:no-repeat;
+    background-size:cover;    
+}
+
+.garage-bg {
+    background-color:#fff;
+    background-image:url('assets/images/garage-bg.jpg');
+    background-position:center bottom;
+    background-repeat:no-repeat;
+    background-size:cover;    
+}
+
+.page-container {
+    width:100%;height:100%;
+    padding:40px 20px;
+    margin:0;
+    min-height:720px;
+}
+
+.header-container {
+    width:100%;
+    padding:20px 15px;
+    margin:0;
+    background-color:#fff;
+}
+
+.selected {
+  background-color: #CFD8DC !important;
+  color: white;
+}
+
+ul {margin:0;}
+ul li {list-style-type:none;}
+
+ul.car-list {padding:0;}
+ul.car-list li {margin-bottom:15px;}
+ul.car-list li .row {margin-left:0px;margin-right:0px;}
+
+ul.car-list li .row .car-img-container {padding-left:0px;padding-right:0px;}
+
+
+.car-container {
+    width:100%;height:100%;
+    padding:40px 20px;
+    margin:0;
+    min-height:720px;
+    background-color:#fff;
+}
+
+.car-container .car-img-container {
+    position:relative;
+}
+.car-container .car-img-container .badge {
+    position: absolute;
+    top:15px;
+    left:15px;
+    height:20px;
+    width:20px;
+    display:block;
+    padding: 4px;
+    color: #fff;
+    
+    background-color: #000;
+    border-radius: 4px;
+    box-shadow:2px 2px 2px #444;
+    
+}
+
+.car-container .car-img-container .car-img {
+    float:left;
+    box-shadow:2px 2px 2px #444;
+}
+.car-container .car-name,
+.car-container .car-miles {
+    float:left;width:100%;
+}

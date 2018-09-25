@@ -1,0 +1,23 @@
+<ul class="car-list">
+    <li *ngFor="let car of cars" [class.selected]="car === selectedCar" (click)="onSlect(car)">
+        <div class="row">
+            <div class="col col-md-3 car-img-container">
+                <img src="{{car.img}}" class="img-fluid car-img">
+                <span class="badge">{{car.id}}</span>
+            </div>
+            <div class="col col-md-9">
+                <h2 class="car-name">{{car.name | uppercase}}</h2>
+                <p><b>Engine:</b>&nbsp;{{car.engine}}</p>
+                <p><b>Oil Type:</b>&nbsp;{{car.oil}}</p>
+                <p><b>Milage:</b>&nbsp;{{car.miles}}</p>
+                <p><b>Tires:</b>&nbsp;{{car.tires}}</p>                
+            </div>
+        </div>
+    </li>
+</ul>
+
+<div *ngIf="selectedCar">
+  <h2>{{selectedCar.name | uppercase}} Details</h2>
+  <div>id: {{selectedCar.id}}</div>
+  <div>name: <input [(ngModel)]="selectedCar.name" placeholder="name"></div>
+</div>
